@@ -16,7 +16,7 @@ WhoofPark is a real time dog park presence app that enables owners to view live 
     <img src="https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube"/>
   </a>
 
-  <a href="Docs/WhoofPark-Presentation.pdf">
+  <a href="Docs/WhoofPark Presentation.pdf">
     <img src="https://img.shields.io/badge/View-Presentation-blue?style=for-the-badge&logo=adobe-acrobat-reader"/>
   </a>
 </p>
