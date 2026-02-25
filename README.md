@@ -401,3 +401,12 @@ WhoofPark was designed to explore and demonstrate:
 - Dog compatibility filters  
 - Friend & recurring playmate system  
 - Smart recommendations  
+
+---
+
+## 👤 Author
+
+**Itamar Hadad**  
+
+📧 Email: hzitamar4@gmail.com  
+🔗 LinkedIn: [https://www.linkedin.com/in/itamar-hadad](https://www.linkedin.com/in/itamar-hadad-1aa946307/)
