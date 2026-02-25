@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_settings">
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support &amp; Social"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/color_block_settings"
+            android:layout_marginBottom="@dimen/big_padding">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/settings_LBL_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:padding="@dimen/default_margin"
+                    android:drawableEnd="@drawable/ic_chevron_right"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/settings_LBL_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share WhoofPark"
+                    android:padding="@dimen/default_margin"
+                    android:drawableEnd="@drawable/ic_chevron_right"
+                    android:background="@color/white"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/elevation"
+            android:layout_marginBottom="@dimen/default_margin">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/settings_SWITCH_demoMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developer Mode (Bypass GPS)"
+                android:padding="@dimen/default_margin"
+                android:background="@color/white"
+                app:thumbTint="@color/switch_thumb_selector"
+                app:trackTint="#C2C2C2"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_BTN_logout"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            app:iconTint="@color/red" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/settings_LBL_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="WhoofPark v1.0.0"
+            android:textSize="12sp"
+            android:textColor="@color/version_text_color"
+            android:layout_marginTop="@dimen/default_margin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

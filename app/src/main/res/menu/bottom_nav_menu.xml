@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mapFragment"
+        android:title="Map"
+        android:icon="@drawable/map_icon" />
+
+    <item
+        android:id="@+id/chatsFragment"
+        android:title="Chats"
+        android:icon="@drawable/chats_icon" />
+
+    <item
+        android:id="@+id/myDogFragment"
+        android:title="My Dog"
+        android:icon="@drawable/my_dog_icon" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="Settings"
+        android:icon="@drawable/setting_icon"
+        />
+
+</menu>

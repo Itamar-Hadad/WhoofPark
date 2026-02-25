@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "517015842822",
+    "project_id": "whoofpark-5d456",
+    "storage_bucket": "whoofpark-5d456.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517015842822:android:2f669e921ec8f9a2dad387",
+        "android_client_info": {
+          "package_name": "com.example.whoofpark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517015842822-h13on1n9su05av0opbeqgghlpdfe4plo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whoofpark",
+            "certificate_hash": "602123bee0ccd66fd0ca5af7d28a96bc9a71c204"
+          }
+        },
+        {
+          "client_id": "517015842822-fbm4o9l29iii8g6q17pq8i9nuemnnu21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1KEFB7cHNrgZ68BHf1-2PjRbdhuHTs4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517015842822-4udbckl6um9v171biobm5al9mhlc77cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

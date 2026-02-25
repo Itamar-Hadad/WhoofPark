@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/send_padding_vertical"
+    android:paddingHorizontal="@dimen/little_def_margin">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/chatItem_LBL_senderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Your Dog"
+            android:textColor="@color/title_name_message_color"
+            android:textSize="@dimen/little_title_message_size"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/short_padding"
+        android:layout_marginEnd="@dimen/short2_padding"
+        android:background="@drawable/bg_chat_bubble_sent"
+        android:padding="@dimen/elevation">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/chatItem_LBL_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woof! This works!"
+            android:maxWidth="@dimen/max_width_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/message_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/chatItem_LBL_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/short2_padding"
+            android:paddingEnd="@dimen/little_def_margin"
+            android:text="10:30"
+            android:textColor="@color/title_name_message_color"
+            android:textSize="@dimen/hour_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/chatItem_IMG_profile"
+        android:layout_width="@dimen/pic_message_size"
+        android:layout_height="@dimen/pic_message_size"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unavailable_photo"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

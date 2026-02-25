@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- OFF -->
+    <item android:state_checked="false" android:color="#6B7280" />
+
+    <!-- ON -->
+    <item android:state_checked="true" android:color="@color/lighter_brown_app" />
+</selector>

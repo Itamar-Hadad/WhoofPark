@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyDogFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/otherDog_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/big_padding">
+
+            <!-- Profile Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/big_padding"
+                app:cardCornerRadius="@dimen/big_padding"
+                app:cardElevation="@dimen/elevation">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/otherDog_IMG_profile"
+                    android:layout_width="@dimen/pic_pro_width"
+                    android:layout_height="@dimen/pic_pro_height"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Dog photo"
+                    tools:src="@drawable/ic_launcher_foreground"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Name -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/otherDog_LBL_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:textAlignment="center"
+                android:textSize="@dimen/dog_name_size"
+                android:textStyle="bold"
+                tools:text="Dog Name"/>
+
+
+            <!-- Details Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bigger_margin"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/little_elevation"
+                android:backgroundTint="@color/lighter_brown_app">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/bigger_padding">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/little_title_size"
+                        android:layout_marginBottom="@dimen/default_margin"/>
+
+                    <!-- Breed -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/otherDog_LBL_breed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:text="Breed:" />
+
+
+                    <!-- Gender -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/otherDog_LBL_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:textSize="@dimen/text_size"
+                        android:text="Gender:" />
+
+                    <!-- Age -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/otherDog_LBL_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:textSize="@dimen/text_size"
+                        android:text="Age:" />
+
+
+                    <!-- Size -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/otherDog_LBL_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:textSize="@dimen/text_size"
+                        android:text="Size:" />
+
+
+                    <!-- Hobbies -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/otherDog_LBL_hobbies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:textSize="@dimen/text_size"
+                        android:text="Hobbies:" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/otherDog_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/outline_arrow_back_24"
+        app:iconTint="@color/black"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/lighter_brown_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/default_margin"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.whoofpark.ui.MapFragment"
+        android:label="Map" >
+        <action
+            android:id="@+id/action_mapFragment_to_parkDetailFragment"
+            app:destination="@id/parkDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myDogFragment"
+        android:name="com.example.whoofpark.ui.MyDogFragment"
+        android:label="My Dog" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.whoofpark.ui.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.example.whoofpark.ui.ChatsFragment"
+        android:label="Chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/parkDetailFragment"
+        android:name="com.example.whoofpark.ui.ParkDetailFragment"
+        android:label="Park Detail">
+        <argument
+            android:name="parkId"
+            app:argType="string" />
+        <argument
+            android:name="parkName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_parkDetailFragment_to_otherDogProfileFragment"
+            app:destination="@id/otherDogProfileFragment" />
+        <action
+            android:id="@+id/action_parkDetailFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherDogProfileFragment"
+        android:name="com.example.whoofpark.ui.OtherDogProfileFragment"
+        android:label="otherDogProfileFragment" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.example.whoofpark.ui.ChatRoomFragment"
+        android:label="ChatRoomFragment" >
+        <action
+            android:id="@+id/action_chatRoomFragment_to_otherDogProfileFragment"
+            app:destination="@id/otherDogProfileFragment" />
+    </fragment>
+
+</navigation>

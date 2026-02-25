@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WhoofPark</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="breed_label">Breed: %1$s</string>
+    <string name="gender_label">Gender: %1$s</string>
+    <string name="age_label">Age: %1$d</string>
+    <string name="size_label">Size: %1$s</string>
+    <string name="hobbies_label">Hobbies: %1$s</string>
+    <string name="how_long_are_you_staying">How long are you staying?</string>
+
+</resources>

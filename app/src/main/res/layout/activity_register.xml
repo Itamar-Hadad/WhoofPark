@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/register_LOTTIE_dog"
+        android:layout_width="@dimen/icon_login_size"
+        android:layout_height="@dimen/icon_login_size"
+        app:lottie_rawRes="@raw/dog_lottie"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/register_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join WhoofPark! 🐾"
+        android:textSize="@dimen/title_login"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/register_LOTTIE_dog"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_EDT_email_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:hint="Email Address"
+        app:startIconDrawable="@android:drawable/ic_dialog_email"
+        app:layout_constraintTop_toBottomOf="@id/register_LBL_title">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_EDT_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/big2_padding"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_EDT_password_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/elevation"
+        android:hint="Create Password"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+        app:layout_constraintTop_toBottomOf="@id/register_EDT_email_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_EDT_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/big2_padding"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_BTN_signup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginTop="32dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/register_EDT_password_layout"
+        tools:layout_editor_absoluteX="24dp"
+        android:backgroundTint="@color/brown_color"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/parkDetail_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_app_color"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/little_def_margin"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/parkDetail_BTM_back"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:background="@android:color/transparent"
+            android:src="@drawable/outline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/parkDetail_LBL_namePark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:text="Park's Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/little_title_size"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/parkDetail_IMG_parkImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/park_image_size"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unavailable_photo"
+        app:layout_constraintTop_toBottomOf="@id/parkDetail_container" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/parkDetail_LL_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/parkDetail_IMG_parkImage">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/parkDetail_LBL_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: Loading..."
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/parkDetail_LBL_openingHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Opening Hours: 24/7"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/brown_app_color"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/parkDetail_LBL_whoHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="Who's Here Now"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parkDetail_LL_info" />
+
+    <View
+        android:id="@+id/parkDetail_divider"
+        android:layout_width="@dimen/line_width"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@id/parkDetail_LBL_whoHere"
+        app:layout_constraintTop_toBottomOf="@id/parkDetail_LBL_whoHere" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parkDetail_RV_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/little_def_margin"
+        app:layout_constraintBottom_toTopOf="@id/parkDetail_LL_buttonsContainer"
+        app:layout_constraintTop_toBottomOf="@id/parkDetail_divider" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/parkDetail_LL_buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/parkDetail_BTN_imHere"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="Im Here!"
+            android:backgroundTint="@color/brown_app_color"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/parkDetail_BTN_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat"
+            android:backgroundTint="@color/brown_app_color"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_selected">#69F0AE</color>
+    <color name="button_color">#A5D6A7</color>
+    <color name="app_color">#A5D6A7</color>
+    <color name="light_app_color">#C8E6C9</color>
+    <color name="darker_green">#689F38</color>
+    <color name="brown_app_color">#CF7A4A</color>
+    <color name="lighter_brown_app">#E6A57C</color>
+    <color name="brown_color">#725B53</color>
+    <color name="gender_selected">#212121</color>
+    <color name="gender_unselected">#E6A57C</color>
+    <color name="gender_selected_text">#FFFFFF</color>
+    <color name="gender_unselected_text">#000000</color>
+    <color name="time_left_color">#D32F2F</color>
+    <color name="red">#D32F2F</color>
+    <color name="title_name_message_color">#757575</color>
+    <color name="color_block_settings">#E0E0E0</color>
+    <color name="version_text_color">#9E9E9E</color>
+    <color name="line_color">#F0F0F0</color>
+    <color name="background_color">#D7CCC8</color>
+</resources>

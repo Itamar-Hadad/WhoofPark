@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/little_def_margin"
+    android:layout_marginVertical="@dimen/short_padding"
+    app:cardCornerRadius="@dimen/elevation"
+    app:cardElevation="@dimen/short_padding">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_top_bar"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/itemConv_IMG_Park"
+            android:layout_width="@dimen/pic_mychats_size"
+            android:layout_height="@dimen/pic_mychats_size"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+            android:src="@drawable/unavailable_photo" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/elevation"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemConv_LBL_ParkName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Park Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/chat_title_my_chats"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/itemConv_LBL_LastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last message content..."
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textColor="@color/title_name_message_color" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/itemConv_LBL_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textSize="@dimen/little_title_message_size"
+            android:textColor="@color/title_name_message_color" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

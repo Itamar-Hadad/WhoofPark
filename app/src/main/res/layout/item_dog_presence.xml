@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/little_def_margin"
+    app:cardCornerRadius="@dimen/elevation">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/elevation"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dogItem_IMG_profile"
+            android:layout_width="@dimen/dogItem_img"
+            android:layout_height="@dimen/dogItem_img"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+            android:src="@drawable/unavailable_photo" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dogItem_LBL_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Dog's Name"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dogItem_LBL_timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 min\nleft"
+            android:textColor="@color/time_left_color"
+            android:textSize="@dimen/little_string_size"
+            android:gravity="center" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
