@@ -1,5 +1,9 @@
-# 🐾 WhoofPark  
-**Know who's barking before you go.**
+<p align="center">
+  <img src="images/App_Icon.png" width="110" />
+</p>
+
+<h1 align="center">🐾 WhoofPark</h1>
+<p align="center"><b>Know who's barking before you go.</b></p>
 
 WhoofPark is a real time dog park presence app that enables owners to view live park activity, see which dogs are present, discover potential playmates, coordinate visits, and interact with other dog owners instantly.
 
