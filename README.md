@@ -44,7 +44,7 @@ This results in:
 
 ---
 
-# ✨ The Solution — WhoofPark
+# ✨ The Solution: WhoofPark
 
 WhoofPark provides real time visibility into dog park activity, allowing owners to see which dogs are present, manage their presence, and communicate with other owners at the park.
 
