@@ -71,7 +71,7 @@ Each user maintains a customizable dog profile:
 - Breed  
 - Age
 - Hobbies
-- י 
+
  
 Users can:
 
