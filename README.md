@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/App_Icon.png" width="110" />
+  <img src="Images/app-icon.jpeg" width="110" />
 </p>
 
 <h1 align="center">🐾 WhoofPark</h1>
@@ -302,14 +302,96 @@ WhoofPark was designed to explore and demonstrate:
 
 # 📸 Screenshots
 
-*(Add screenshots here)*
+## 🚀 App Flow
 
-- Splash Screen  
-- Login Screen  
-- Live Map  
-- Dog Profile  
-- Dog Park Screen  
-- Park Chat  
+<p align="center">
+  <img src="Images/splash-screen.jpg" width="250"/>
+  <img src="Images/login-screen.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Splash Screen</sub> • <sub>Authentication</sub>
+</p>
+
+---
+
+## 📍 Live Map & Presence
+
+<p align="center">
+  <img src="Images/map-view-1.jpg" width="250"/>
+  <img src="Images/map-view-2.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Live Location</sub> • <sub>Park Presence</sub>
+</p>
+
+---
+
+## 🐶 Dog Profiles
+
+<p align="center">
+  <img src="Images/my-dog-profile.jpg" width="250"/>
+  <img src="Images/edit-my-dog-profile.jpg" width="250"/>
+  <img src="Images/other-dog-profile.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>My Dog Profile</sub> • <sub>Edit My Dog Profile</sub> • <sub>Other Dog Profile</sub>
+</p>
+
+---
+
+## 🏞 Dog Park Experience
+
+<p align="center">
+  <img src="Images/dogpark-fragment.jpg" width="250"/>
+  <img src="Images/check-in-dialog.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Park Details</sub> • <sub>Check-In</sub>
+</p>
+
+---
+
+## 💬 Real-Time Chat
+
+<p align="center">
+  <img src="Images/park-chat.jpg" width="250"/>
+  <img src="Images/chats-fragment.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Park Chat</sub> • <sub>Conversations</sub>
+</p>
+
+---
+
+## 🔔 Notifications & Presence Logic
+
+<p align="center">
+  <img src="Images/notification.jpg" width="250"/>
+  <img src="Images/notification-alert.jpg" width="250"/>
+  <img src="Images/time-expired-dialog.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Notification</sub> • <sub>Alert</sub> • <sub>Stay Expired</sub>
+</p>
+
+---
+
+## ⚙️ Settings & System Dialogs
+
+<p align="center">
+  <img src="Images/settings-screen.jpg" width="250"/>
+  <img src="Images/logout-dialog.jpg" width="250"/>
+</p>
+
+<p align="center">
+  <sub>Settings</sub> • <sub>Logout Confirmation</sub>
+</p> 
 
 ---
 
